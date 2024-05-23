@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link class="icon" rel="apple-touch-icon" href="%favicon_io (1)%/favicon.ico">
+    <link class="icon" rel="icon" type="image/png" sizes="32x32" href="./favicon_io (1)/favicon-32x32.png">
+    <link class="icon" rel="icon" type="image/png" sizes="16x16" href="./favicon_io (1)/favicon-16x16.png">
+    <link class="icon" rel="icon" type="image/png" sizes="192x192" href="./favicon_io (1)/android-chrome-192x192.png">
+    <link class="icon" rel="icon" type="image/png" sizes="512x512" href="./favicon_io (1)/android-chrome-512x512.png">
+    <!-- <link class="icon" rel="manifest" href="/site.webmanifest"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../landing/index.html" class="nav-link"><img src="../icons/Logo.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><img width="100px" height="100px"
+                                style="border-radius: 12px;" src="../icons/home.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="../icons/pa.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="../icons/res.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="../icons/mail.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="../icons/notification.png" alt=""></a>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link"><img src="../icons/settings.png" alt=""></a></li>
+                    <li class="nav-item"><a href="" class="logout"><img src="../icons/logout.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper-left">
+            <header>
+                <div class="container">
+                    <div class="header-inner">
+                        <div class="header-box">
+                            <h1 class="header-title">Jaegar Resto</h1>
+                            <time class="header-time" datetime="2022-06-19">June 19, 2020</time>
+                        </div>
+                        <input type="text" class="header-inp" placeholder=" Sear for food, coffee, etc...">
+                    </div>
+                    <nav class="header-nav">
+                        <ul class="header-list">
+
+                        </ul>
+                    </nav>
+                    <hr class="line">
+                </div>
+            </header>
+            <main>
+                <section class="foods">
+                    <div class="container">
+                        <div class="food-top">
+                            <h2 class="choose">Choose Dishes</h2>
+                            <select class="select">
+                                <option value="default">Default</option>
+                                <option value="higher">Price: From higher</option>
+                                <option value="lower">Price: From lower</option>
+                            </select>
+                        </div>
+                        <ul class="food-list">
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="wrapper-right">
+            <h2 class="orders">Orders #34562</h2>
+            <hr>
+            <ul class="order-list">
+                
+            </ul>
+            <hr>
+            <div class="total-pirce-wrap">
+                <p class="subtotal">Discount</p>  <p style="color: aliceblue;" class="discount"></p>
+              </div>
+            <div class="total-pirce-wrap">
+              <p class="subtotal">Sub-Total</p>  <p style="color: aliceblue;" class="price-result"></p>
+            </div>
+
+            <button class="go-payment">Continue to Payment</button>
+
+        </div>
+        <div class="payment-active">
+            <h2 style="color: white; font-size: 40px; margin-top: 50px;">Payment</h2>
+            <h5 style="color: grey; font-size: 20px; margin: 15px 0 15px;">3 payment methods avialable</h5>
+            <hr>
+            <h2 style="color: white; font-size: 30px; margin-top: 15px;">Payment Method</h2>
+            <div class="methods">
+                <div class="credits pay-by-card">
+                    <div class="icons">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <i class="fa-solid fa-circle-check card-check"></i>
+                    </div>
+                    <h4>Credit Card</h3>
+                </div>
+
+                <div class="credits pay-by-paypal">
+                    <div class="icons">
+                        <i class="fa-brands fa-paypal"></i>
+                        <i class="fa-solid fa-circle-check paypal-check"></i>
+                    </div>
+                    <h4>Paypal</h3>
+                </div>
+
+                <div class="credits pay-by-cash">
+                    <div class="icons">
+                        <i class="fa-solid fa-wallet"></i>
+                        <i class="fa-solid fa-circle-check cash-check"></i>
+                    </div>
+                    <h4>Cash</h3>
+                </div>
+            </div>
+
+            <form class="payment-form">
+                <label for="name">Cardholder Name</label>
+                <input type="text" name="name" placeholder="Levi Ackerman">
+
+                <label for="cc-number">Card Number</label>
+                <input id="card-number" placeholder="1234 1234 1234 1234" type="text" required maxlength="19">
+
+                <div class="card-details">
+                    <div class="expiration">
+                        <label for="cc-exp">Card Expiry</label>
+                        <input id="card-exp" placeholder="10/25" type="text" maxlength="5" required>
+                    </div>
+                    <div class="cvv">
+                        <label for="cc-cvc">CVV</label>
+                        <input id="card-ccv" placeholder="123" type="text" maxlength="3" required>
+                    </div>
+                </div>
+            </form>
+
+            <form class="paypal-form">
+                <label for="name">E-mail or Phone Number</label>
+                <input type="text" name="name" placeholder="example@gmail.com">
+
+                <label for="name">Password</label>
+                <input type="password" name="name" placeholder="......">
+                <a style="color: white; margin-bottom: 30px;" href="">Forgot Password ?</a>
+            </form>
+
+            <form class="cash-form">
+                <h2 style="margin: 20px 0 10px;">Fill the form, we will notify you as soon as your order gets ready</h2>
+                <hr style="margin-bottom: 20px;">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" placeholder="Levi Ackerman">
+                <label for="name">Phone Number</label>
+                <input type="text" name="name" placeholder="90 443 55 67">
+
+                
+            </form>
+
+            <hr color="grey">
+
+            <div class="order-details">
+                <div class="order-select">
+                    <h3 style="color: white;">Order Type</h3>
+                    <select name="" id="">
+                        <option value="1">Dine In</option>
+                        <option value="2">Delivery</option>
+                        <option value="3">To Go</option>
+                    </select>
+                </div>
+                <div class="order-seat">
+                    <h3 style="color: white;">Table No</h3>
+                    <input  placeholder="123" type="number">
+                </div>
+            </div>
+
+            <div class="payment-btns">
+                <button class="pay-cancel">Cancel</button>
+                <button class="pay-confirm">Confirm Payment</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+<script src="./script.js"></script>
+
+</html>

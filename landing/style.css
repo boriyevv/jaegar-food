@@ -1,0 +1,245 @@
+/* =====================  Font   =========================== */
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url("/fonts/Barlow-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow-Medium";
+    src: url("/fonts/Barlow-Medium.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url("/fonts/Barlow-Regular.woff") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: url("/fonts/Barlow-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("/fonts/Barlow-Regular.woff") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Barlow-SemiBold";
+    src: url("/fonts/Barlow-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*   ================= Styles ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow";
+    background-color: #252836;
+    overflow: hidden;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    display: flex;
+    width: 120px;
+    height: 100vh;
+    margin-right: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.nav-menu{
+    margin-top: -5px;
+    /* position: relative; */
+    width: 100%;
+    /* padding-left: 25px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #1F1D2B;
+    
+
+
+}
+.nav-list{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+
+.line {
+
+    border: 1px solid #393c49;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.nav-item{
+    padding-right: 15px;
+    /* padding-left: 5px; */
+    width: 108.5px;
+    height: 118px;
+    background: #1F1D2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    width: 108.5px;
+    height: 108.5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+
+}
+
+.nav-item:nth-child(2){
+    border-radius: 0 12px 0 0;
+}
+
+.nav-item:nth-child(8){
+    border-radius: 0 0 12px 0;
+}
+
+.nav-item:nth-child(1){
+    padding-top: 10px;
+    background: #252836;
+    border-radius: 12px;
+}
+
+.nav-item:nth-child(2){
+    border-radius: 0 12px 0 0;
+}
+
+.logout{
+    margin-top: 20px;
+}
+
+.header-inner {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-bottom: 24px;
+}
+
+.header-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.header-time {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #e0e6e9;
+}
+
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    margin-top: 60px;
+    background: #1F1D2B;
+    border-radius: 16px;
+    width: 192px;
+    /* height: 226px; */
+    padding: 24px;
+}
+
+.food-img{
+    border-radius: 50% ;
+    display: flex;
+    margin:0 auto;
+    margin-top: -70px;
+}
+
+.food-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.food-item{
+    margin-bottom: 70px;
+}
+
+.food-title {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.food-desk {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    display: block;
+    text-align: center;
+    color: #ABBBC2;
+}
